@@ -12,7 +12,6 @@ import { Checkbox } from "react-native-paper";
 export default function Login({ navigation }) {
   const [text, setText] = useState("");
   const [password, setpassword] = useState("");
-
   const [checked, setChecked] = useState(false);
 
   return (
@@ -51,7 +50,7 @@ export default function Login({ navigation }) {
           </View>
           <TouchableOpacity
             style={styles.loginbtn}
-            onPress={() => navigation.navigate("Login")}
+            onPress={() => navigation.navigate("Home")}
           >
             <Text style={styles.loginbtntext}>Login</Text>
           </TouchableOpacity>

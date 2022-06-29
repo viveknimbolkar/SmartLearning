@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   signupbtn: {
     borderColor: "FFFF00",
     width: 300,
-    backgroundColor: "yellow",
+    backgroundColor: "#FFD639",
     borderRadius: 12,
     margin: 8,
     color: "#4a4a4a",

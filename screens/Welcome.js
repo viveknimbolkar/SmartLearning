@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     height: 200,
   },
   btn: {
-    backgroundColor: "yellow",
+    backgroundColor: "#FFD639",
     marginTop: 30,
     borderRadius: 12,
     width: 250,
