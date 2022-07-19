@@ -1,8 +1,8 @@
 import { StyleSheet, View, Alert, Text, TouchableOpacity } from "react-native";
-import { Avatar, Card } from "react-native-paper";
+import { Avatar } from "react-native-paper";
 import userImg from "../assets/user.png";
 
-export default function MyProfile({navigation}) {
+export default function MyProfile({ navigation }) {
   return (
     <>
       <View style={styles.maincontainer}>
@@ -24,10 +24,13 @@ export default function MyProfile({navigation}) {
           </View>
         </View>
         <View style={styles.menu}>
-          {/* <Card.Title title="Settings" />
-          <Card.Title title="Logout" /> */}
           <TouchableOpacity style={styles.menuItem}>
-            <Text style={styles.menuItemText}>Settings</Text>
+            <Text
+              onPress={() => navigation.navigate("Settings")}
+              style={styles.menuItemText}
+            >
+              Settings
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
@@ -38,9 +41,9 @@ export default function MyProfile({navigation}) {
                   {
                     text: "Cancel",
                     onPress: () => console.log("Cancel Pressed"),
-                    style: "cancel"
+                    style: "cancel",
                   },
-                  { text: "OK", onPress: () => console.log("OK Pressed") }
+                  { text: "OK", onPress: () => console.log("OK Pressed") },
                 ]
               );
             }}
